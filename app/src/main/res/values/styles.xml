@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/CemprengYellow</item>
+        <item name="colorPrimaryDark">@color/ButekBlue</item>
+        <item name="colorAccent">@color/DiscRed</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndividualUni"
+    android:background="#93d0e8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/SchoolName"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="SchoolName"
+                android:textSize="35sp"
+                app:layout_constraintStart_toEndOf="@+id/SchoolPhoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/SchoolPhoto"
+                android:layout_width="150dp"
+                android:layout_height="133dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/addToFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="add to favorites"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/SchoolName"
+                app:layout_constraintTop_toBottomOf="@+id/SchoolName" />
+
+            <RelativeLayout
+                android:id="@+id/facultyset1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/SchoolPhoto"
+                app:layout_constraintVertical_bias="0.226"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/Faculty1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Faculty of Science"
+                    android:textSize="30sp"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="216dp" />
+
+                <ImageView
+                    android:id="@+id/down1"
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:layout_toRightOf="@id/Faculty1"
+                    app:srcCompat="@drawable/ic_down_foreground"
+                    tools:layout_editor_absoluteX="294dp"
+                    tools:layout_editor_absoluteY="190dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/facultyset2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/facultyset1"
+                app:layout_constraintVertical_bias="0.379"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/Faculty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Business School"
+                    android:textSize="30sp"
+                    tools:layout_editor_absoluteX="58dp"
+                    tools:layout_editor_absoluteY="216dp" />
+
+                <ImageView
+                    android:id="@+id/down2"
+                    android:layout_width="91dp"
+                    android:layout_height="91dp"
+                    android:layout_toRightOf="@id/Faculty2"
+                    app:srcCompat="@drawable/ic_down_foreground"
+                    tools:layout_editor_absoluteX="294dp"
+                    tools:layout_editor_absoluteY="190dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/courseDropDown1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/facultyset1"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <ListView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/courseChoices"
+                    android:entries="@array/FacultyOfScience"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="42dp"
+                    android:layout_alignBottom="@id/courseChoices"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="-8dp"
+                    android:layout_toRightOf="@id/courseChoices"
+                    android:src="@drawable/ic_up_foreground"
+                    android:id="@+id/up1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/courseDropDown2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/facultyset2"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <ListView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/courseChoices2"
+                    android:entries="@array/BusinessSchool"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="42dp"
+                    android:layout_alignBottom="@id/courseChoices2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="-8dp"
+                    android:layout_toRightOf="@id/courseChoices2"
+                    android:src="@drawable/ic_up_foreground"
+                    android:id="@+id/up2"/>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="46dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="96dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

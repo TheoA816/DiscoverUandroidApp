@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/uniview"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/main">
+
+        <ImageView
+            android:id="@+id/uniphoto"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/uniphoto"
+            android:textStyle="bold"
+            android:text="uniName"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:id="@+id/uniName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uniphoto"
+            android:text="QS World Ranking"
+            android:textSize="20sp"
+            android:id="@+id/QSworldRank"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/QSworldRank"
+            android:text="City"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/city"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/QSworldRank"
+            android:id="@+id/rank"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Rank"
+            android:layout_below="@id/uniphoto"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/city"
+            android:id="@+id/cityname"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="cityName"
+            android:layout_below="@id/rank"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/city"
+            android:textColor="#f54263"
+            android:id="@+id/remove"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">JasonLogin</string>
+
+    // -- General Strings -- //
+    <string name="sign_up">Sign Up</string>
+    <string name="app_heading">DiscoverU</string>
+    <string name="app_tag_line">Discovering Your\nBrighter Future</string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="what_we_do">What We Do</string>
+    <string name="login">Login</string>
+
+    <string name="enter_username">Enter Username</string>
+    <string name="password">Enter Password</string>
+
+    <string-array name="FacultyOfScience">
+        <item>Computer Science</item>
+        <item>Mechanical Engineering</item>
+        <item>Medicine</item>
+    </string-array>
+
+    <string-array name="BusinessSchool">
+        <item>Accounting</item>
+        <item>Finance</item>
+        <item>Business Management</item>
+    </string-array>
+</resources>

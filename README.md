@@ -4,4 +4,8 @@ App for HS students to learn more about their dream universities
 
 // testing test_branches
 
+<<<<<<< HEAD
+// Hello World
+=======
 // bruhtagor
+>>>>>>> master
